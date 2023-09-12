@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaGithub, FaLinkedin, FaTimes } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Logo1 from '../../public/assets/logo1.png'
 import Image from 'next/image'
 
@@ -40,7 +42,7 @@ const Navbar = () => {
         </ul>
 
         {/* Icons Social */}
-        <div className='flex fixed flex-col top-[35%] left-0'>
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
 
           <ul>
             <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
@@ -57,18 +59,18 @@ const Navbar = () => {
               Github <FaGithub size={38} />
             </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-emerald-300'>
+            <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-emerald-500'>
             <a
               className='flex justify-between items-center w-full text-gray-300 '
               href=''>
-              Email <FaLinkedin size={38} />
+              Email <HiOutlineMail size={38} />
             </a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600'>
             <a
               className='flex justify-between items-center w-full text-gray-300 '
               href=''>
-              Contato <FaLinkedin size={38} />
+              Resumo <BsFillPersonLinesFill size={38} />
             </a>
           </li>
         </ul>
