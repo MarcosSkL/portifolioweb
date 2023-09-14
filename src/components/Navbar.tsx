@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-slate-800 text-gray-300'>
         <div>
-          <Image src={Logo1} width={150} alt='Logo SKL' />
+          <Image src={Logo1} width={150} height={150} alt='Logo SKL' />
         </div>
 
         <ul className='hidden md:flex'>
