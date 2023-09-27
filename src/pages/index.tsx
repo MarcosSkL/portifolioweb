@@ -7,18 +7,18 @@ import Work from '@/components/Work'
 import Contact from '@/components/Contact'
 
 const index = () => {
-  return (
-    <>
-      <div>
-        <Navbar />
-        <Home />
-        <About />
-        <Skills />
-        <Work />
-        <Contact />
-      </div>
-    </>
-  )
+   return (
+      <>
+         <div>
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <Work />
+            <Contact />
+         </div>
+      </>
+   )
 }
 
 export default index
