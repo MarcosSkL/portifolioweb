@@ -18,14 +18,15 @@ const About = () => {
           </div>
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             <div className='sm:text-right text-4xl font-bold'>
-              <p>Olá, eu sou Marcos, prazer em conhecê-lo. Por favor, dê uma olhada ao redor.</p>
+              <p>“A História por Trás do Código: Minha Vida como Desenvolvedor de Software".</p>
             </div>
             <div>
-              <p>Sou apaixonado por construir software excelente que melhore
-                a vida das pessoas ao meu redor. Sou especialista em criação de software
-                para clientes que vão desde pessoas físicas e pequenas empresas, todos os
-                caminho para grandes corporações empresariais. O que você faria se tivesse
-                um especialista em software disponível ao seu alcance?</p>
+              <p>"Sou Desenvolvedor WEB e Mobile, e de olho no Backend. Amante da tecnologia desde pequeno,
+                estou sempre em busca de novos desafios e aprendizagem na área. Ex-militar da Força Aérea
+                Brasileira e Músico, estou migrando para a área da tecnologia, com bastante carga de conhecimento,
+                na qual adquirir em diversas áreas que atuei. Meu objetivo é criar, manter e atualizar,
+                interfaces e aplicações funcionais e modernas, que atendam às necessidades dos usuários, empresas e clientes.
+                Entre em contato comigo, vamos conversar sobre como eu posso contribuir para a sua empresa ou projeto".</p>
             </div>
           </div>
         </div>

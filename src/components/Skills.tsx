@@ -2,12 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import HTML from '../../public/assets/html.png';
 import CSS from '../../public/assets/css.png';
-import Javascript from '../../public/assets/javascript.png';
+import Typescript from '../../public/assets/typescript.png';
 import ReactLogo from '../../public/assets/ReactLogo.png';
 import Node from '../../public/assets/node.png';
 import Firebase from '../../public/assets/firebase.png';
 import AWS from '../../public/assets/aws.png';
-import Github from '../../public/assets/github.png';
+import Nextjs from '../../public/assets/Nextjs.png';
 import Tailwind from '../../public/assets/tailwind.png';
 import Mongo from '../../public/assets/mongo.png';
 
@@ -31,16 +31,16 @@ const Skills = () => {
                      <p className='my-4'>CSS</p>
                   </div>
                   <div className='shadow-md shadow-slate-800 hover:scale-110 duration-500'>
-                     <Image src={Javascript} width={80} height={80} alt='Javascript Icon' className='mx-auto' />
-                     <p className='my-4'>Javascript</p>
+                     <Image src={Typescript} width={80} height={80} alt='Typescript Icon' className='mx-auto' />
+                     <p className='my-4'>Typescript</p>
                   </div>
                   <div className='shadow-md shadow-slate-800 hover:scale-110 duration-500'>
                      <Image src={ReactLogo} width={80} height={80} alt='React Icon' className='mx-auto' />
                      <p className='my-4'>React</p>
                   </div>
                   <div className='shadow-md shadow-slate-800 hover:scale-110 duration-500'>
-                     <Image src={Github} width={80} height={80} alt='Github Icon' className='mx-auto' />
-                     <p className='my-4'>Github</p>
+                     <Image src={Nextjs} width={80} height={80} alt='NextJS Icon' className='mx-auto' />
+                     <p className='my-4'>NextJS</p>
                   </div>
                   <div className='shadow-md shadow-slate-800 hover:scale-110 duration-500'>
                      <Image src={Node} width={80} height={80} alt='Node Icon' className='mx-auto' />

@@ -1,8 +1,4 @@
 import React from 'react';
-import Parallax from '../../public/assets/Projetos/Parallax.png';
-import SKgames from '../../public/assets/Projetos/SKgames.png';
-import ThinkOfNumber from '../../public/assets/Projetos/Think_of_number.png';
-import Image from 'next/image';
 
 const Work = () => {
    return (
@@ -22,11 +18,11 @@ const Work = () => {
                            React TS Application
                         </span>
                         <div className='pt-8 text-center'>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                           <a href='https://gamestoreskl.vercel.app/' target='_blanck'>
+                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Demo</button>
                            </a>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                           <a href='https://github.com/MarcosSkL/game-storehouse' target='_blanck'>
+                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Code</button>
                            </a>
 
                         </div>
@@ -41,11 +37,11 @@ const Work = () => {
                            React TS Application
                         </span>
                         <div className='pt-8 text-center'>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                           <a href='https://marcosskl.github.io/Parallax_HTML5-e-CSS3/' target='_blanck'>
+                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Demo</button>
                            </a>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                           <a href='https://github.com/MarcosSkL/Parallax_HTML5-e-CSS3' target='_blanck'>
+                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Code</button>
                            </a>
 
                         </div>
@@ -60,36 +56,18 @@ const Work = () => {
                            React TS Application
                         </span>
                         <div className='pt-8 text-center'>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                           <a href='https://marcosskl.github.io/Think-of-Number/' target='_blanck'>
+                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Demo</button>
                            </a>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                           </a>
-
-                        </div>
-
-                     </div>
-                  </div>
-                  <div className="bg-[url('../../public/assets/Projetos/SKgames.png')] bg-cover bg-center bg-no-repeat shadow-lg shadow-slate-700 group container rounded-md flex justify-center item-center mx-auto h-[250px]">
-
-                     {/* Hover Effects */}
-                     <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
-                        <span className='text-2xl font-bold text-white tracking-wide'>
-                           React TS Application
-                        </span>
-                        <div className='pt-8 text-center'>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                           </a>
-                           <a href='/'>
-                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                           <a href='https://github.com/MarcosSkL/Think-of-Number' target='_blanck'>
+                              <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Code</button>
                            </a>
 
                         </div>
 
                      </div>
                   </div>
+          
 
                </div>
             </div>

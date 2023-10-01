@@ -26,7 +26,7 @@ const Navbar = () => {
                   </Link>
                </li>
                <li>
-                  <Link to='sobre' smooth={true} duration={500}>
+                  <Link to='about' smooth={true} duration={500}>
                      Sobre
                   </Link>
                </li>
@@ -36,12 +36,12 @@ const Navbar = () => {
                   </Link>
                </li>
                <li>
-                  <Link to='projetos' smooth={true} duration={500}>
+                  <Link to='work' smooth={true} duration={500}>
                      Projetos
                   </Link>
                </li>
                <li>
-                  <Link to='contato' smooth={true} duration={500}>
+                  <Link to='contact' smooth={true} duration={500}>
                      Contato
                   </Link>
                </li>
@@ -54,11 +54,26 @@ const Navbar = () => {
 
             {/*mobile Menu*/}
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center'}>
-               <li className='py-6 text text-3xl'>Home</li>
-               <li className='py-6 text text-3xl'>Sobre</li>
-               <li className='py-6 text text-3xl'>Skills</li>
-               <li className='py-6 text text-3xl'>Projetos</li>
-               <li className='py-6 text text-3xl'>Contato</li>
+               <li className='py-6 text text-3xl'>
+                  <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+                     Home
+                  </Link></li>
+               <li className='py-6 text text-3xl'>
+                  <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+                     Sobre
+                  </Link></li>
+               <li className='py-6 text text-3xl'>
+                  <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+                     Skills
+                  </Link></li>
+               <li className='py-6 text text-3xl'>
+                  <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+                     Projetos
+                  </Link></li>
+               <li className='py-6 text text-3xl'>
+                  <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+                     Contato
+                  </Link></li>
             </ul>
 
             {/* Icons Social */}
@@ -82,15 +97,15 @@ const Navbar = () => {
                   <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-emerald-500'>
                      <a
                         className='flex justify-between items-center w-full text-gray-300 '
-                        href='marcos.marsk@gmail.com' target='_blank'>
+                        href='mailto:marcos.marsk@gmail.com' target='_blank'>
                         Email <HiOutlineMail size={38} />
                      </a>
                   </li>
                   <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600'>
                      <a
                         className='flex justify-between items-center w-full text-gray-300 '
-                        href=''>
-                        Resumo <BsFillPersonLinesFill size={38} />
+                        href='/assets/Curriculo/Curriculo_Marcos_Bezerra_principal_onePage.pdf' target="_blank">
+                        Curriculo <BsFillPersonLinesFill size={38} />
                      </a>
                   </li>
                </ul>
