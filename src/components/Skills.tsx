@@ -47,8 +47,8 @@ const Skills = () => {
                      <p className='my-4'>Node</p>
                   </div>
                   <div className='shadow-md shadow-slate-800 hover:scale-110 duration-500'>
-                     <Image src={Mongo} width={80} height={80} alt='MongoDB Icon' className='mx-auto' />
-                     <p className='my-4'>MongoDB</p>
+                     <Image src={Firebase} width={80} height={80} alt='Firebase Icon' className='mx-auto' />
+                     <p className='my-4'>Firebase</p>
                   </div>
                   <div className='shadow-md shadow-slate-800 hover:scale-110 duration-500'>
                      <Image src={Tailwind} width={80} height={80} alt='Tailwind Icon' className='mx-auto' />
