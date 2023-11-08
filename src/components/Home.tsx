@@ -1,8 +1,35 @@
 import React from 'react';
+import { useEffect, useRef } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll'
 
 const Home = () => {
+
+   const elementoRef = useRef<HTMLParagraphElement | null>(null);
+
+   useEffect(() => {
+      if (elementoRef.current) {
+         typeWrite(elementoRef.current);
+      }
+   }, []);
+
+
+   function typeWrite(elemento: any) {
+      const textoArray = elemento.innerText.split("");
+      elemento.innerHTML = " ";
+      textoArray.forEach(function (letra: any, i: any) {
+         setTimeout(function () {
+            // Remova a barra "|" anterior
+            if (elemento.innerHTML.endsWith('<span class="animate-blink text-cyan-500 text-lg">|</span>')) {
+               elemento.innerHTML = elemento.innerHTML.slice(0, -'<span class="animate-blink text-cyan-500 text-lg">|</span>'.length);
+            }
+            // Adicione a letra e a nova barra "|"
+            elemento.innerHTML += letra + '<span class="animate-blink text-cyan-500 text-lg">|</span>';
+         }, 50 * i);
+      });
+   }
+
+
    return (
       <>
          <div id='home' className='bg-slate-800 w-full h-screen sm:px-14'>
@@ -11,7 +38,7 @@ const Home = () => {
                <p className='text-cyan-300'>Olá, me chamo</p>
                <h1 className='text-4xl sm:text-7xl font-bold text-slate-200'>Marcos Bezerra</h1>
                <h2 className='text-4xl sm:text-7xl font-bold text-slate-400'>Software Developer.</h2>
-               <p className='text-slate-400 py-4 max-w-[700px]'>
+               <p ref={typeWrite} className='text-slate-400 py-4 max-w-[700px] inline'>
                   Sou desenvolvedor full-stack especializado no Front, WEB e Mobile (Com um toque de criatividade em design)
                   pronto para transformar ideias complexas em aplicativos web responsivos.
                </p>
