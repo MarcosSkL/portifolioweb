@@ -16,33 +16,33 @@ const Navbar = () => {
       <>
          <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-slate-800 text-gray-300'>
             <div>
-               <Image src={Logo2} width={150} height={150} alt='Logo SKL' />
+               <a href='/'><Image src={Logo2} width={150} height={150} alt='Logo SKL' /></a>
             </div>
 
             <ul className='hidden md:flex'>
                <li>
                   <Link to='home' smooth={true} duration={500}>
-                     Home
+                    <span className='hover:text-white hover:font-bold'>Home</span> 
                   </Link>
                </li>
                <li>
                   <Link to='about' smooth={true} duration={500}>
-                     Sobre
+                  <span className='hover:text-white hover:font-bold'>Sobre</span>
                   </Link>
                </li>
                <li>
                   <Link to='skills' smooth={true} duration={500}>
-                     Skills
+                  <span className='hover:text-white hover:font-bold'>Skills</span>
                   </Link>
                </li>
                <li>
                   <Link to='work' smooth={true} duration={500}>
-                     Projetos
+                  <span className='hover:text-white hover:font-bold'>Projetos</span>
                   </Link>
                </li>
                <li>
                   <Link to='contact' smooth={true} duration={500}>
-                     Contato
+                  <span className='hover:text-white hover:font-bold'>Contato</span>
                   </Link>
                </li>
             </ul>

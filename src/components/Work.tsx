@@ -15,7 +15,7 @@ const Work = () => {
                      {/* Hover Effects */}
                      <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
                         <span className='text-2xl font-bold text-white tracking-wide'>
-                           Next TS WEB Application
+                           NextJS TS WEB Application
                         </span>
                         <div className='pt-8 text-center'>
                            <a href='https://gamestoreskl.vercel.app/' target='_blanck'>
@@ -34,7 +34,7 @@ const Work = () => {
                      {/* Hover Effects */}
                      <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
                         <span className='text-2xl font-bold text-white tracking-wide'>
-                           Next JS WEB
+                           NextJS JS WEB
                         </span>
                         <div className='pt-8 text-center'>
                            <a href='https://saiba-politico.vercel.app/' target='_blanck'>
