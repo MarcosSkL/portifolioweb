@@ -19,30 +19,30 @@ const Navbar = () => {
                <a href='/'><Image src={Logo2} width={150} height={150} alt='Logo SKL' /></a>
             </div>
 
-            <ul className='hidden md:flex'>
+            <ul className='hidden md:flex font-bold'>
                <li>
                   <Link to='home' smooth={true} duration={500}>
-                    <span className='hover:text-white hover:font-bold'>Home</span> 
+                    <span className='hover:text-white'>Home</span> 
                   </Link>
                </li>
                <li>
                   <Link to='about' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Sobre</span>
+                  <span className='hover:text-white'>Sobre</span>
                   </Link>
                </li>
                <li>
                   <Link to='skills' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Skills</span>
+                  <span className='hover:text-white'>Skills</span>
                   </Link>
                </li>
                <li>
                   <Link to='work' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Projetos</span>
+                  <span className='hover:text-white'>Projetos</span>
                   </Link>
                </li>
                <li>
                   <Link to='contact' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Contato</span>
+                  <span className='hover:text-white'>Contato</span>
                   </Link>
                </li>
             </ul>
@@ -56,23 +56,23 @@ const Navbar = () => {
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center'}>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-                     Home
+                  <span className='hover:text-white hover:font-bold'>Home</span> 
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-                     Sobre
+                  <span className='hover:text-white hover:font-bold'>Sobre</span>
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-                     Skills
+                  <span className='hover:text-white hover:font-bold'>Skills</span>
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-                     Projetos
+                  <span className='hover:text-white hover:font-bold'>Projetos</span>
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-                     Contato
+                  <span className='hover:text-white hover:font-bold'>Contato</span>
                   </Link></li>
             </ul>
 
