@@ -14,7 +14,7 @@ const Navbar = () => {
 
    return (
       <>
-         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-slate-800 text-gray-300'>
+         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-slate-800 text-gray-300 z-50'>
             <div>
                <a href='/'><Image src={Logo2} width={150} height={150} alt='Logo SKL' /></a>
             </div>

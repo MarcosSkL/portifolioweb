@@ -18,7 +18,7 @@ const About = () => {
           </div>
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             <div className='sm:text-right text-4xl font-bold'>
-              <p>“A História por Trás do Código: Minha Vida como Desenvolvedor de Software".</p>
+              <p>A História por Trás do Código<span className='text-cyan-400'>...</span><span className='animate-blink text-cyan-400'>|</span></p>
             </div>
             <div>
               <p>"Sou Desenvolvedor WEB e Mobile, e de olho no Backend. Amante da tecnologia desde pequeno,

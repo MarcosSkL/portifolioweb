@@ -20,11 +20,11 @@ const Home = () => {
       textoArray.forEach(function (letra: any, i: any) {
          setTimeout(function () {
             // Remova a barra "|" anterior
-            if (elemento.innerHTML.endsWith('<span class="animate-blink text-cyan-500 text-lg">|</span>')) {
-               elemento.innerHTML = elemento.innerHTML.slice(0, -'<span class="animate-blink text-cyan-500 text-lg">|</span>'.length);
+            if (elemento.innerHTML.endsWith('<span class="animate-blink text-cyan-500 text-xl font-black">|</span>')) {
+               elemento.innerHTML = elemento.innerHTML.slice(0, -'<span class="animate-blink text-cyan-500 text-xl font-black">|</span>'.length);
             }
             // Adicione a letra e a nova barra "|"
-            elemento.innerHTML += letra + '<span class="animate-blink text-cyan-500 text-lg">|</span>';
+            elemento.innerHTML += letra + '<span class="animate-blink text-cyan-500 text-xl font-black">|</span>';
          }, 50 * i);
       });
    }
@@ -38,8 +38,8 @@ const Home = () => {
                <p className='text-cyan-300'>Olá, me chamo</p>
                <h1 className='text-4xl sm:text-7xl font-bold text-slate-200'>Marcos Bezerra</h1>
                <h2 className='text-4xl sm:text-7xl font-bold text-slate-400'>Software Developer.</h2>
-               <p ref={typeWrite} className='text-slate-400 py-4 max-w-[700px] inline'>
-                  Sou desenvolvedor full-stack especializado no Front, WEB e Mobile (Com um toque de criatividade em design)
+               <p ref={typeWrite} className='text-slate-400 py-4 max-w-[700px] text-lg'>
+                  Olá, sou desenvolvedor full-stack especializado no Front, WEB e Mobile (Com um toque de criatividade em design)
                   pronto para transformar ideias complexas em aplicativos web responsivos.
                </p>
                <div>
