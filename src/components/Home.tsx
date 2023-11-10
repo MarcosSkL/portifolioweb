@@ -15,18 +15,20 @@ const Home = () => {
 
 
    function typeWrite(elemento: any) {
-      const textoArray = elemento.innerText.split("");
-      elemento.innerHTML = " ";
-      textoArray.forEach(function (letra: any, i: any) {
-         setTimeout(function () {
-            // Remova a barra "|" anterior
-            if (elemento.innerHTML.endsWith('<span class="animate-blink text-cyan-500 text-xl font-black">|</span>')) {
-               elemento.innerHTML = elemento.innerHTML.slice(0, -'<span class="animate-blink text-cyan-500 text-xl font-black">|</span>'.length);
-            }
-            // Adicione a letra e a nova barra "|"
-            elemento.innerHTML += letra + '<span class="animate-blink text-cyan-500 text-xl font-black">|</span>';
-         }, 50 * i);
-      });
+      if (elemento) {
+         const textoArray = elemento.innerText.split("");
+         elemento.innerHTML = " ";
+         textoArray.forEach(function (letra: any, i: any) {
+            setTimeout(function () {
+               // Remova a barra "|" anterior
+               if (elemento.innerHTML.endsWith('<span class="animate-blink text-cyan-500 text-xl font-black">|</span>')) {
+                  elemento.innerHTML = elemento.innerHTML.slice(0, -'<span class="animate-blink text-cyan-500 text-xl font-black">|</span>'.length);
+               }
+               // Adicione a letra e a nova barra "|"
+               elemento.innerHTML += letra + '<span class="animate-blink text-cyan-500 text-xl font-black">|</span>';
+            }, 40 * i);
+         });
+      }
    }
 
 
