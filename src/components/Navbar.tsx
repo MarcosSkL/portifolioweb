@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useRef } from 'react';
 import { FaBars, FaGithub, FaLinkedin, FaTimes } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import useOnScreen from './UseScreen';
 import Logo2 from '../../public/assets/logo2.png';
 import Image from 'next/image';
 import { Link } from 'react-scroll'
@@ -10,6 +12,9 @@ const Navbar = () => {
 
    const [nav, setNav] = useState(false);
    const handleClick = () => setNav(!nav);
+
+   const ref = useRef<HTMLDivElement>(null);
+   const onScreen = useOnScreen(ref);
 
 
    return (
@@ -20,31 +25,56 @@ const Navbar = () => {
             </div>
 
             <ul className='hidden md:flex font-bold'>
-               <li>
-                  <Link to='home' smooth={true} duration={500}>
-                    <span className='hover:text-white'>Home</span> 
-                  </Link>
-               </li>
-               <li>
-                  <Link to='about' smooth={true} duration={500}>
-                  <span className='hover:text-white'>Sobre</span>
-                  </Link>
-               </li>
-               <li>
-                  <Link to='skills' smooth={true} duration={500}>
-                  <span className='hover:text-white'>Skills</span>
-                  </Link>
-               </li>
-               <li>
-                  <Link to='work' smooth={true} duration={500}>
-                  <span className='hover:text-white'>Projetos</span>
-                  </Link>
-               </li>
-               <li>
-                  <Link to='contact' smooth={true} duration={500}>
-                  <span className='hover:text-white'>Contato</span>
-                  </Link>
-               </li>
+               <div
+                  ref={ref}
+                  className={`animate transform transition-all duration-500 ease-in-out ${onScreen ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-52 opacity-0'}`}
+               >
+                  <li>
+                     <Link to='home' smooth={true} duration={500}>
+                        <span className='hover:text-white'>Home</span>
+                     </Link>
+                  </li>
+               </div>
+               <div
+                  ref={ref}
+                  className={`animate transform transition-all duration-500 ease-in-out ${onScreen ? 'translate-y-0 opacity-100 delay-300' : 'translate-x-52 opacity-0'}`}
+               >
+                  <li>
+                     <Link to='about' smooth={true} duration={500}>
+                        <span className='hover:text-white'>Sobre</span>
+                     </Link>
+                  </li>
+               </div>
+               <div
+                  ref={ref}
+                  className={`animate transform transition-all duration-500 ease-in-out ${onScreen ? 'translate-y-0 opacity-100 delay-[400ms]' : 'translate-x-52 opacity-0'}`}
+               >
+                  <li>
+                     <Link to='skills' smooth={true} duration={500}>
+                        <span className='hover:text-white'>Skills</span>
+                     </Link>
+                  </li>
+               </div>
+               <div
+                  ref={ref}
+                  className={`animate transform transition-all duration-500 ease-in-out ${onScreen ? 'translate-y-0 opacity-100 delay-500' : 'translate-x-52 opacity-0'}`}
+               >
+                  <li>
+                     <Link to='work' smooth={true} duration={500}>
+                        <span className='hover:text-white'>Projetos</span>
+                     </Link>
+                  </li>
+               </div>
+               <div
+                  ref={ref}
+                  className={`animate transform transition-all duration-500 ease-in-out ${onScreen ? 'translate-y-0 opacity-100 delay-[600ms]' : 'translate-x-20 opacity-0'}`}
+               >
+                  <li>
+                     <Link to='contact' smooth={true} duration={500}>
+                        <span className='hover:text-white'>Contato</span>
+                     </Link>
+                  </li>
+               </div>
             </ul>
 
 
@@ -56,23 +86,23 @@ const Navbar = () => {
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center'}>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Home</span> 
+                     <span className='hover:text-white hover:font-bold'>Home</span>
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Sobre</span>
+                     <span className='hover:text-white hover:font-bold'>Sobre</span>
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Skills</span>
+                     <span className='hover:text-white hover:font-bold'>Skills</span>
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Projetos</span>
+                     <span className='hover:text-white hover:font-bold'>Projetos</span>
                   </Link></li>
                <li className='py-6 text text-3xl'>
                   <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-                  <span className='hover:text-white hover:font-bold'>Contato</span>
+                     <span className='hover:text-white hover:font-bold'>Contato</span>
                   </Link></li>
             </ul>
 

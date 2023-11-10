@@ -1,6 +1,7 @@
 import { useEffect, useState, RefObject } from 'react';
 
 function useOnScreen(ref: RefObject<HTMLElement>): boolean {
+
     const [isIntersecting, setIntersecting] = useState(false);
 
     useEffect(() => {
@@ -8,7 +9,7 @@ function useOnScreen(ref: RefObject<HTMLElement>): boolean {
             ([entry]) => {
                 setIntersecting(entry.isIntersecting);
             },
-           
+
         );
         if (ref.current) {
             observer.observe(ref.current);
@@ -18,7 +19,7 @@ function useOnScreen(ref: RefObject<HTMLElement>): boolean {
                 observer.unobserve(ref.current);
             }
         };
-        }, []);
+    }, []);
 
     return isIntersecting;
 }

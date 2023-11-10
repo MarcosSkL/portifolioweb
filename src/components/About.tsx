@@ -4,8 +4,8 @@ import useOnScreen from './UseScreen';
 
 const About = () => {
 
-  const ref = useRef();
-  const onScreen = useOnScreen(ref, '-300px');
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useOnScreen(ref);
 
   return (
     <>
@@ -14,7 +14,7 @@ const About = () => {
         <div className='flex flex-col justify-center items-center w-full h-full'>
           <div
             ref={ref}
-            className={`animate transform transition-all duration-1000 ease-out ${onScreen ? 'translate-y-0 opacity-100' : '-translate-y-52 opacity-0'}`}
+            className={`animate transform transition-all duration-[2000ms] ease-out ${onScreen ? 'translate-y-0 opacity-100' : '-translate-y-52 opacity-0'}`}
           >
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
               <div className='sm:text-right pb-8 pl-4'>
