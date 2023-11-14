@@ -4,7 +4,7 @@
 
 ## 📚 Seções
 
-O portifolio é composto por quatro seções:
+O portifolio é composto por cinco seções:
 
 - **Home:** Nele temos uma breve apresentação;
 - **Sobre:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
