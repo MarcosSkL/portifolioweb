@@ -21,6 +21,5 @@ Para o desenvolvimento deste, utilizei as seguintes tecnologias:
 - Typescript;
 - Tailwind CSS;
 - NextJS;
-- GetForm.io
 
 ---
