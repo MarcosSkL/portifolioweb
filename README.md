@@ -22,4 +22,5 @@ Para o desenvolvimento deste, utilizei as seguintes tecnologias:
 - Tailwind CSS;
 - NextJS;
 
+
 ---
