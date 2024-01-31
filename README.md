@@ -9,7 +9,7 @@ O portifolio é composto por cinco seções:
 - **Home:** Nele temos uma breve apresentação;
 - **Sobre:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
 - **Skills:** Conhecimentos em algumas linguagens;
-- **Projetos:** Alguns projetos desenvolvidos, com códigos no GitHub e
+- **Projetos:** Alguns projetos desenvolvidos, com códigos no GitHub; e
 - **Contato:** Meios para entrar em contato comigo.
 
 ---
