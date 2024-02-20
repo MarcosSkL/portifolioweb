@@ -25,7 +25,7 @@ const Work = () => {
                         {/* Hover Effects */}
                         <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
                            <span className='text-2xl font-bold text-white tracking-wide'>
-                              NextJS TS WEB Application
+                              Next.js<br/>TS<br/>WEB Application
                            </span>
                            <div className='pt-8 text-center'>
                               <a href='https://gamestoreskl.vercel.app/' target='_blanck'>
@@ -44,7 +44,7 @@ const Work = () => {
                         {/* Hover Effects */}
                         <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
                            <span className='text-2xl font-bold text-white tracking-wide'>
-                              NextJS JS WEB
+                              Next.js <br/>JS <br/>API Rest
                            </span>
                            <div className='pt-8 text-center'>
                               <a href='https://saiba-politico.vercel.app/' target='_blanck'>
@@ -58,12 +58,31 @@ const Work = () => {
 
                         </div>
                      </div>
+                     <div className="bg-[url('../../public/assets/Projetos/SKLMovies.png')] bg-cover bg-center bg-no-repeat shadow-lg shadow-slate-700 group container rounded-md flex justify-center item-center mx-auto h-[250px]">
+
+                        {/* Hover Effects */}
+                        <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
+                           <span className='text-2xl font-bold text-white tracking-wide'>
+                              Next.js<br/>JS<br/>API Rest<br/>Tailwind CSS
+                           </span>
+                           <div className='pt-8 text-center'>
+                              <a href='https://sk-l-movies.vercel.app/filmes' target='_blanck'>
+                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Demo</button>
+                              </a>
+                              <a href='https://github.com/MarcosSkL/SkLMovies' target='_blanck'>
+                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-sky-400 text-gray-700 font-bold text-lg'>Code</button>
+                              </a>
+
+                           </div>
+
+                        </div>
+                     </div>
                      <div className="bg-[url('../../public/assets/Projetos/Parallax.png')] bg-cover bg-center bg-no-repeat shadow-lg shadow-slate-700 group container rounded-md flex justify-center item-center mx-auto h-[250px]">
 
                         {/* Hover Effects */}
                         <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
                            <span className='text-2xl font-bold text-white tracking-wide'>
-                              HTML5 CSS3
+                              HTML5 <br/>CSS3
                            </span>
                            <div className='pt-8 text-center'>
                               <a href='https://marcosskl.github.io/Parallax_HTML5-e-CSS3/' target='_blanck'>
@@ -77,12 +96,13 @@ const Work = () => {
 
                         </div>
                      </div>
+                     
                      <div className="bg-[url('../../public/assets/Projetos/Think_of_number.png')] bg-cover bg-center bg-no-repeat shadow-lg shadow-slate-700 group container rounded-md flex justify-center item-center mx-auto h-[250px]">
 
                         {/* Hover Effects */}
                         <div className='text-center items-center justify-center flex flex-col group-hover:bg-cyan-600 group-hover:bg-opacity-90 hover:rounded-lg opacity-0 group-hover:opacity-100 w-full'>
                            <span className='text-2xl font-bold text-white tracking-wide'>
-                              HTML5 CSS3
+                              HTML5<br/> CSS3
                            </span>
                            <div className='pt-8 text-center'>
                               <a href='https://marcosskl.github.io/Think-of-Number/' target='_blanck'>
